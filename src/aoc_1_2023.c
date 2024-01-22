@@ -16,6 +16,8 @@
 
 #define STDIN 0
 #define STDOUT 1
+#define SYS_EXIT 60
+#define SYS_GET_UID 102
 
 char* byte_to_hex[256]; 
 
@@ -41,7 +43,7 @@ read_next_char:
 
   // Print the data on the screen
   unsigned int data = 0 << 24 | '\n' << 16 | last << 8 | first;
-  write(STDOUT, &data, 3 - ((1 - end_line) * 3));
+  write(STDOUT, &data, end_line * 3);
       
   // Reset
   last = '\0' + (1 - end_line) * last;
@@ -60,7 +62,7 @@ read_next_char:
   write(STDOUT, &"\n", exit);
 
   // Exit if needed
-  int sys = exit * 60 + (1 - exit) * 102;
+  int sys = exit * SYS_EXIT + (1 - exit) * SYS_GET_UID;
   syscall(sys);
 
   goto read_next_char;
