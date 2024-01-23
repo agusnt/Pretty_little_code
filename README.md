@@ -29,4 +29,4 @@ Use the following code header for your code:
 ## List of code
 
 * *prt_num*: print the numbers from 0 to 10
-* *aoc_1_2023*: [https://adventofcode.com/2023/day/1]https://adventofcode.com/2023/day/1)
+* *aoc_1_2023*: [https://adventofcode.com/2023/day/1](https://adventofcode.com/2023/day/1)
