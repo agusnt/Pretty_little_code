@@ -13,7 +13,7 @@ std::for_each type functions. Only use **gotos**!!!.
 ## Code header
 
 Use the following code header for your code:
-'''C
+```C
 /*
 * Description
 *
@@ -24,8 +24,9 @@ Use the following code header for your code:
 * @Date: 
 * @Email: 
 */
-'''
+```
 
 ## List of code
 
 * *prt_num*: print the numbers from 0 to 10
+* *aoc_1_2023*: [https://adventofcode.com/2023/day/1]https://adventofcode.com/2023/day/1)
